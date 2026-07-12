@@ -53,28 +53,25 @@ Below is a detailed breakdown of where each specific requirement for the Web Dev
 
 Use the checklists below to track project progression:
 
-# Week 1: Project Setup, Shared Layout, & CSS Variables
+# Week 1: Foundations, Layout, & Data Logging
 - [ ] Initialize the project repository with directories for `/src/ui`, `/src/domain`, and `/src/svc`.
 - [ ] Build the shared page layout including the `<header>`, `<footer>`, `<nav>`, and structural `<section>` containers.
 - [ ] Implement a vanilla JavaScript routing system to swap between Dashboard, Upgrades Board, and Audio Troubleshooter views.
 - [ ] Write `style.css` with a central variable theme, incorporating dark-mode rules, reset guidelines, and typography fonts.
-- [ ] Set up basic placeholders for parts figures and navigation.
-
-# Week 2: Domain Catalog, Maintenance Logger, & Local Storage
 - [ ] Create `course-data.js` containing the 2005 Accord EX 2.4L specification data.
 - [ ] Implement the Maintenance Log `<form>` incorporating text, number, select dropdowns, and reset/submit buttons.
 - [ ] Write Domain layer validator logic to check if a service is overdue based on entered mileage and time.
 - [ ] Set up Service layer endpoints to save and load service logs to/from browser `localStorage`.
 - [ ] Render log cards in the dashboard using JavaScript `map` and `filter`.
 
-# Week 3: Upgrade Planner & XTRONS Diagnostics
+# Week 2: Interactive Planning & Diagnostic Wizard
 - [ ] Create the Upgrades Planner layout using CSS Flexbox columns.
 - [ ] Enable HTML5 drag-and-drop handlers on upgrade cards to move them between columns.
 - [ ] Connect drag-and-drop state changes back to the Domain layer, updating budget totals dynamically on drop.
 - [ ] Design the XTRONS Troubleshooter page with a step-by-step diagnostic questionnaire wizard.
 - [ ] Implement conditional rendering in JS to display tailored troubleshooting guidelines.
 
-# Week 4: C# API Backend, Query Parameters, & Final Polish
+# Week 3: C# API Backend, Query Parameters, & Final Polish
 - [ ] Set up a C# ASP.NET Core Web API project to manage data storage.
 - [ ] Implement C# Controller endpoints to handle JSON requests for vehicle records.
 - [ ] Update the frontend Service layer using async/await and fetch to sync data with the local C# server instead of only LocalStorage.
