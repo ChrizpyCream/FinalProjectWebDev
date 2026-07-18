@@ -62,11 +62,11 @@ Below is a detailed breakdown of where each specific requirement for the Web Dev
  [x] Set up basic placeholders for parts figures and navigation.
 
 ## Milestone 2: Domain Catalog, Maintenance Logger, & Local Storage
- [ ] Create `course-data.js` containing the 2005 Accord EX 2.4L specification data.
- [ ] Implement the Maintenance Log `<form>` incorporating text, number, select dropdowns, and reset/submit buttons.
- [ ] Write Domain layer validator logic to check if a service is overdue based on entered mileage and time.
- [ ] Set up Service layer endpoints to save and load service logs to/from browser `localStorage`.
- [ ] Render log cards in the dashboard using JavaScript `map` and `filter`.
+ [x] Create `course-data.js` containing the 2005 Accord EX 2.4L specification data.
+ [x] Implement the Maintenance Log `<form>` incorporating text, number, select dropdowns, and reset/submit buttons.
+ [x] Write Domain layer validator logic to check if a service is overdue based on entered mileage and time.
+ [x] Set up Service layer endpoints to save and load service logs to/from browser `localStorage`.
+ [x] Render log cards in the dashboard using JavaScript `map` and `filter`.
 
 # Week 2: Interactive Planning & Diagnostic Wizard
 

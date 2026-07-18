@@ -1,10 +1,7 @@
-
-
 import { initRouter } from "./ui/router.js";
+import { initDashboard } from "./ui/dashboard.js";
 
 document.addEventListener("DOMContentLoaded", () => {
-  console.log("AccordQuest: Initializing Milestone 1 Layout & Router...");
-  
-  
+  initDashboard();
   initRouter();
 });
