@@ -55,11 +55,11 @@ Below is a detailed breakdown of where each specific requirement for the Web Dev
 # Week 1: Foundations, Layout, & Data Logging
 
 ## Milestone 1: Foundations & Layout
- [ ] Initialize the project repository with directories for `/src/ui`, `/src/domain`, and `/src/svc`.
- [ ] Build the shared page layout including the `<header>`, `<footer>`, `<nav>`, and structural `<section>` containers.
- [ ] Implement a vanilla JavaScript routing system to swap between Dashboard, Upgrades Board, and Audio Troubleshooter views.
- [ ] Write `style.css` with a central variable theme, incorporating dark-mode rules, reset guidelines, and typography fonts.
- [ ] Set up basic placeholders for parts figures and navigation.
+ [x] Initialize the project repository with directories for `/src/ui`, `/src/domain`, and `/src/svc`.
+ [x] Build the shared page layout including the `<header>`, `<footer>`, `<nav>`, and structural `<section>` containers.
+ [x] Implement a vanilla JavaScript routing system to swap between Dashboard, Upgrades Board, and Audio Troubleshooter views.
+ [x] Write `style.css` with a central variable theme, incorporating dark-mode rules, reset guidelines, and typography fonts.
+ [x] Set up basic placeholders for parts figures and navigation.
 
 ## Milestone 2: Domain Catalog, Maintenance Logger, & Local Storage
  [ ] Create `course-data.js` containing the 2005 Accord EX 2.4L specification data.

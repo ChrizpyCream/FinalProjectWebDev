@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="AccordQuest: Web Dev Final Project for the 7th Gen Honda Accord. This is Week 1 Milestone 1 focusing on layout, routing, and styling foundations.">
+  <title>AccordQuest | 7th Gen Honda Accord Companion & Upgrade Planner</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+  <!-- Shared Header -->
+  <header>
+    <div class="header-container">
+      <div class="logo-section">
+        <div class="logo-badge">H</div>
+        <div class="logo-text">
+          <h1>AccordQuest</h1>
+          <p>EX 2.4L VTEC Companion</p>
+        </div>
+      </div>
+      <nav>
+        <a href="#dashboard" class="nav-active" id="nav-dashboard">Dashboard</a>
+        <a href="#upgrades" id="nav-upgrades">Upgrade Planner</a>
+        <a href="#troubleshooter" id="nav-troubleshooter">Audio Troubleshooter</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main View Container -->
+  <main>
+
+     <!-- DASHBOARD VIEW -->
+    <section id="dashboard-view" class="view-section">
+      <div class="view-header">
+        <h2 class="view-title">Owner Dashboard</h2>
+        <p class="view-subtitle">Real-time maintenance logs & vehicle diagnostics placeholder layout</p>
+      </div>
+
+      <!-- Vehicle Overview Cards -->
+      <div class="dashboard-grid">
+        <!-- Specs Details Placeholder -->
+        <div class="card specs-card">
+          <div class="specs-card-header">
+            <h3>Vehicle Overview (Placeholder)</h3>
+            <span class="engine-badge">K24A4 VTEC</span>
+          </div>
+          <div class="specs-grid">
+            <div class="spec-item"><strong>Year/Make/Model:</strong> <span>2005 Honda Accord EX</span></div>
+            <div class="spec-item"><strong>Engine:</strong> <span>2.4L 4-Cylinder (K24A4)</span></div>
+            <div class="spec-item"><strong>Output:</strong> <span>160 hp @ 5,500 RPM</span></div>
+            <div class="spec-item"><strong>Oil Spec:</strong> <span>5W-30 Full Synthetic (4.4 Qts)</span></div>
+            <div class="spec-item"><strong>Trans Fluid:</strong> <span>Honda ATF DW-1 / ATF-Z1</span></div>
+            <div class="spec-item"><strong>Spark Plugs:</strong> <span>NGK IZFR6K11 Iridium</span></div>
+          </div>
+          <!-- Parts Figure Diagram Placeholder -->
+          <div class="figure-placeholder-container" style="margin-top: 1.5rem; text-align: center;">
+            <figure style="background: rgba(0,0,0,0.2); padding: 1.5rem; border-radius: 8px; border: 1px dashed var(--border-color);">
+              <span style="font-size: 3rem;">🚗</span>
+              <figcaption style="font-size: 0.8rem; color: var(--text-secondary); margin-top: 0.5rem;">
+                Figure 1.1: 7th Gen Accord Mechanical Schematic Map (Placeholder)
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+
+        <!-- Mileage Card Placeholder -->
+        <div class="card mileage-card">
+          <div class="specs-card-header">
+            <h3>Odometer Sync</h3>
+            <span class="engine-badge" style="background-color: var(--status-due-bg); border-color: var(--status-due); color: var(--status-due);">Placeholder</span>
+          </div>
+          <div class="mileage-display-panel">
+            <p style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 8px;">
+              Enter vehicle odometer value to calculate service intervals. (Form functionality coming in Milestone 2)
+            </p>
+            <div class="mileage-input-group" style="display: flex; gap: 8px;">
+              <input type="number" value="145200" disabled style="width: 100%; background: var(--bg-deep); border: 1px solid var(--border-color); color: var(--text-muted); text-align: center; font-size: 1.2rem; padding: 6px; border-radius: 4px;">
+              <button class="btn-primary" disabled style="opacity: 0.6; cursor: not-allowed;">Sync</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Maintenance Logger and Recalls Placeholder split -->
+      <div class="logger-recalls-grid" style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin-top: 1.5rem;">
+        <!-- Logger Form Placeholder -->
+        <div class="card logger-card">
+          <h3>Log Maintenance (Form Placeholder)</h3>
+          <p style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 1rem;">
+            This logger form will validate and store maintenance inputs in browser local storage.
+          </p>
+          <div style="background-color: rgba(255, 255, 255, 0.02); padding: 1.5rem; border-radius: 8px; border: 1px dashed var(--border-color); text-align: center; color: var(--text-muted);">
+            🛠️ Logger Form Layout - Coming in Week 1 Milestone 2
+          </div>
+        </div>
+
+        <!-- Safety Recalls Placeholder -->
+        <div class="card recalls-card">
+          <h3>NHTSA Safety Recalls (API Placeholder)</h3>
+          <p style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 1rem;">
+            This panel will retrieve active safety recall campaigns for 2005 Accords via HTTP requests.
+          </p>
+          <div style="background-color: rgba(255, 255, 255, 0.02); padding: 1.5rem; border-radius: 8px; border: 1px dashed var(--border-color); text-align: center; color: var(--text-muted);">
+            📡 Recalls Integration - Coming in Week 3 Milestone 5
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- 2. UPGRADES PLANNER VIEW (Milestone 1 Layout & Placeholders) -->
+    <section id="upgrades-view" class="view-section">
+      <div class="view-header">
+        <h2 class="view-title">Cabin & Aesthetic Planner</h2>
+        <p class="view-subtitle">Organize and budget custom modifications placeholder layout</p>
+      </div>
+
+      <!-- Kanban planner Columns Layout Placeholders -->
+      <div class="planner-workspace-grid" style="display: grid; grid-template-columns: 1fr 3fr; gap: 1.5rem;">
+        <!-- Card Addition Sidebar Placeholder -->
+        <div class="card add-upgrade-panel">
+          <h3>Add Project Card</h3>
+          <p style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 1rem;">
+            Input custom parts here to build wishlist cards on the planner board.
+          </p>
+          <div style="background-color: rgba(255, 255, 255, 0.02); padding: 1.5rem; border-radius: 8px; border: 1px dashed var(--border-color); text-align: center; color: var(--text-muted); font-size: 0.9rem;">
+            📦 Planner Inputs - Coming in Week 2 Milestone 3
+          </div>
+        </div>
+
+        <!-- Board Column Placeholders -->
+        <div class="kanban-board" style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.2rem;">
+          <!-- Wishlist Column -->
+          <div class="kanban-column" style="background-color: var(--bg-card); border: 1px solid var(--border-color); padding: 1rem; border-radius: 8px; min-height: 300px;">
+            <h3 style="border-bottom: 2px solid var(--border-color); padding-bottom: 0.5rem; margin-bottom: 1rem; font-size: 1rem;">Wishlist</h3>
+            <div style="background-color: rgba(255, 255, 255, 0.01); border: 1px dashed var(--border-color); padding: 1rem; text-align: center; border-radius: 6px; color: var(--text-muted); font-size: 0.8rem;">
+              Drop items here (Milestone 3)
+            </div>
+          </div>
+
+          <!-- In Progress Column -->
+          <div class="kanban-column" style="background-color: var(--bg-card); border: 1px solid var(--border-color); padding: 1rem; border-radius: 8px; min-height: 300px;">
+            <h3 style="border-bottom: 2px solid var(--status-due); padding-bottom: 0.5rem; margin-bottom: 1rem; font-size: 1rem;">In Progress</h3>
+            <div style="background-color: rgba(255, 255, 255, 0.01); border: 1px dashed var(--border-color); padding: 1rem; text-align: center; border-radius: 6px; color: var(--text-muted); font-size: 0.8rem;">
+              Drop items here (Milestone 3)
+            </div>
+          </div>
+
+          <!-- Completed Column -->
+          <div class="kanban-column" style="background-color: var(--bg-card); border: 1px solid var(--border-color); padding: 1rem; border-radius: 8px; min-height: 300px;">
+            <h3 style="border-bottom: 2px solid var(--status-good); padding-bottom: 0.5rem; margin-bottom: 1rem; font-size: 1rem;">Completed</h3>
+            <div style="background-color: rgba(255, 255, 255, 0.01); border: 1px dashed var(--border-color); padding: 1rem; text-align: center; border-radius: 6px; color: var(--text-muted); font-size: 0.8rem;">
+              Drop items here (Milestone 3)
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- 3. AUDIO TROUBLESHOOTER VIEW  -->
+    <section id="troubleshooter-view" class="view-section">
+      <div class="view-header">
+        <h2 class="view-title">XTRONS Android 14 Troubleshooter</h2>
+        <p class="view-subtitle">Interactive wizard to debug steering wheel controls and audio delays placeholder layout</p>
+      </div>
+
+      <div class="card wizard-box" style="max-width: 800px; margin: 0 auto; padding: 2.5rem; background-color: var(--bg-card); border: 1px solid var(--border-color); border-radius: 8px; text-align: center;">
+        <span style="font-size: 3rem;">⚙️</span>
+        <h3 style="margin-top: 1rem; margin-bottom: 0.5rem; color: #FFF;">XTRONS Diagnostic Wizard Placeholder</h3>
+        <p style="color: var(--text-secondary); margin-bottom: 1.5rem; font-size: 0.95rem;">
+          A step-by-step diagnostic questionnaire wizard designed to fix wireless drops and audio latency in aftermarket head units.
+        </p>
+        <div style="background-color: rgba(255, 255, 255, 0.02); padding: 1.5rem; border-radius: 8px; border: 1px dashed var(--border-color); color: var(--text-muted); font-size: 0.9rem;">
+          🤖 Conditional diagnostic routes - Coming in Week 2 Milestone 4
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Shared Footer -->
+  <footer style="background-color: var(--bg-deep); border-top: 1px solid var(--border-color); padding: 1rem; text-align: center; position: fixed; bottom: 0; left: 0; width: 100%;">
+    <div style="display: flex; justify-content: space-between; align-items: center; max-width: 1200px; margin: 0 auto; font-size: 0.8rem; color: var(--text-muted);">
+      <div>
+        <span style="display: inline-block; width: 8px; height: 8px; border-radius: 50%; background-color: var(--status-due); margin-right: 6px; box-shadow: 0 0 6px var(--status-due);"></span>
+        <span>AccordQuest Core: Week 1 Milestone 1 Layout Initialized</span>
+      </div>
+      <div>
+        <span>Owner: 2005 Accord EX (K24 VTEC)</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Link app module -->
+  <script type="module" src="./src/app.js"></script>
+</body>
+</html>
